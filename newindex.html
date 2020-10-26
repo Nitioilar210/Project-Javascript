@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOdoHangouut</title>
+    <link rel="stylesheet" href='type.css'>
+</head>
+<body>
+    <div class="body">
+        <h1 id="title">ชักดาบ</h1>
+        <div class="div">
+            <lable for='title'>เพิ่มค่าใช่จ่าย : </lable>
+            <input type="text" id='userList' placeholder="รายการใช้จ่าย"></input>
+            <lable for='title'>จำนวนเงิน : </lable>
+            <input type="number" id='userDept' placeholder="0"></input>
+            <button id="addButton">เพิ่มรายการใช้จ่าย</button>
+        </div>
+        <div class="div">
+            <lable for='title'>เพิ่มคน : </lable>
+            <input type="text" id='userName' placeholder="ชื่อคนที่จะเพิ่ม"></input>
+            <button id="addNameButton">เพิ่มคน</button>
+        </div>
+        <div class="div">
+        <table id='info' class="table">
+            <thead>
+            <tr id="infoIn">
+                <td>รายการใช้จ่าย</td>
+                <td id="result">รวมทุกคน</td>
+            </tr>
+            </thead> 
+            <tbody id="tobody">           
+                <tr id="total">
+                    <td>จ่ายเพิ่ม/ได้คืน</td>
+                    <td id='totalSum'>0</td>
+                </tr>
+            </tbody>  
+        </table>  
+    </div>
+</div>
+    <script src="program.js"></script>  
+</body>
+</html>
